@@ -82,3 +82,16 @@ netlify/functions
 - El administrador puede leer todos los progresos y modificar configuración.
 - La clave `service_role` nunca debe usar el prefijo `VITE_`.
 - No publiques `.env`.
+
+
+## Corrección de configuración en tiempo de ejecución
+
+Esta versión ya no depende de que Vite inserte `VITE_SUPABASE_URL` y
+`VITE_SUPABASE_ANON_KEY` durante el build. La función:
+
+`netlify/functions/public-config.mjs`
+
+lee ambas variables directamente en el servidor cuando se abre la página.
+Por tanto, después de guardar o corregir esas variables, basta con que la
+función esté desplegada; la aplicación mostrará un error específico si falta
+alguna.
