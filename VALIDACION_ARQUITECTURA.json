@@ -1,0 +1,13 @@
+{
+  "build_exists": true,
+  "progress_storage": "Supabase PostgreSQL",
+  "authentication": "Supabase Auth",
+  "hosting": "Netlify",
+  "server_functions": [
+    "bootstrap-admin",
+    "request-reset",
+    "approve-reset"
+  ],
+  "rls_enabled_by_schema": true,
+  "local_progress_storage": false
+}
