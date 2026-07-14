@@ -1,7 +1,7 @@
 {
   "name": "estetica-study-supabase",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@supabase/supabase-js": "2.57.4"
+    "@supabase/supabase-js": "2.110.5"
   },
   "devDependencies": {
     "vite": "7.3.6"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
